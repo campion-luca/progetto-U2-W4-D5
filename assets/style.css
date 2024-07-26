@@ -1,0 +1,18 @@
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/011/449/273/non_2x/70s-retro-perspective-lines-background-vintage-colourful-stripes-banner-backdrop-and-wallpaper-vector.jpg");
+    background-size: cover;
+}
+
+.h-css {
+    font-size: 60px;
+    color: rgb(210, 127, 127);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.h-m-css {
+    font-size: 45px;
+    color: rgb(210, 127, 127);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.769);
+}

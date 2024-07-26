@@ -20,12 +20,12 @@ const createItems = function () {
 
             listItems.forEach(item => {
                 const newItem = `
-            <div class="card">
+            <div class="card me-5 border border-danger-subtle border-4 rounded shadow-lg p-3 mb-5 bg-body-tertiary rounded">
                     <img src="${item.imageUrl}" class="card-img-top w-100" alt="article photo preview">
                     <div class="card-body text-center">
                         <h5 class="card-title">${item.name}</h5>
                         <p>${item.price}</p>
-                        <a href="./details.html?itemId=${item._id}" class="btn btn-primary">DETAILS</a>
+                        <a href="./details.html?itemId=${item._id}" class="btn btn-outline-danger">DETAILS</a>
                     </div>
                 </div>
             `

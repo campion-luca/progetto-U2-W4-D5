@@ -21,16 +21,16 @@ fetch("https://striveschool-api.herokuapp.com/api/product/" + itemId, {
         console.log(listItems)
         const itemDetailsRow = document.getElementById("row-details")
         itemDetailsRow.innerHTML = `
-        <div class="col-12 col-md-8 text-center mt-5">
-            <div class="card">
+        <div class="col-12 col-md-8 text-center">
+            <div class="card border border-danger-subtle border-4 rounded shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="cards-css">
             <img src="${listItems.imageUrl}" class="card-img-top w-100" alt="article photo preview">
             <div class="card-body">
                 <h5 class="card-title fs-2">${listItems.name}</h5>
                 <p class="fs-4">${listItems.brand}</p>
                 <p class="card-text fs-3">${listItems.description}</p>
                 <p class="fs-2">${listItems.price}<i class="bi bi-currency-euro"></i></p>
-                <a href="./create.html?itemId=${listItems._id}" class="btn btn-warning w-25">MODIFICA</a>
-                <button class="btn btn-danger w-25" onclick="deleteItem()">ELIMINA</button>
+                <a href="./create.html?itemId=${listItems._id}" class="btn btn-outline-danger w-25">MODIFICA</a>
+                <button class="btn btn-outline-danger w-25" onclick="deleteItem()">ELIMINA</button>
             </div>
         </div>
         </div>
